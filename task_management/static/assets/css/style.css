@@ -1,0 +1,83 @@
+.login-button {
+    float: right;
+}
+
+.navbar-text {
+    margin-top: 20px;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #333;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #000;
+}
+
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.login .btn {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    padding: 7px 12px;
+    font-size: 15px;
+}
+
+.task .btn {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    padding: 7px 12px;
+    font-size: 15px;
+}
+
+.from-input-block {
+    height: 70px;
+}
+
+.login-form-error {
+    color:red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.task-form-error {
+    color:red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login > .from-input-block:first-child{
+    margin-top: 40px;
+}
+
+.from-error-block {
+    height: 30px;
+    font-size: 14px;
+}
+
+.error-block {
+    margin-top: 4px;
+}
+
+.task .input-group {
+    position: relative;
+    display: block;
+    border-collapse: separate;
+}
+
+.description {
+    resize: none;
+}
+

@@ -1,0 +1,25 @@
+<div class="row" ng-controller="TaskListController">
+    <div class="col-md-12">
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="task in taskList">
+                    <a ng-click="loadMarker(task.name)">
+                        {{ task.name }}:
+                    <small>{{ task.address | limitTo:20 }}...</small>
+                        </a>
+                    <div class="pull-right">
+                <a class="glyphicon glyphicon-edit" ui-sref="task-edit({ id: task.id })"></a>
+                <a class="glyphicon glyphicon-remove"  ng-click="deleteTask(task)"></a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-md-8">
+            <div id="map_wrapper">
+                <div id="map_canvas" class="mapping" ng-init="initialize()"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="google-site-verification" content="82o0waLLF8nEUccuWWz5uKAuedNIkVG8pt73NfTpX28"/>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    </head>
+
+    <body ng-app="task.management">
+
+
+        <div ui-view="header"></div>
+        <div ui-view="mainWrapper" class="container"></div>
+        <div ui-view="footer"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3Z3pfa-4X7SuPTUTCRpOgLWAdvxCbo_4&libraries=places"></script>
+        <script src="{% static 'assets/js/angular.min.js' %}"></script>
+        <script src="{% static 'assets/js/angular-ui-router.min.js' %}"></script>
+        <script src="{% static 'assets/js/angular-cookies.min.js' %}"></script>
+        <script src="{% static 'assets/js/task.management.config.js' %}"></script>
+        <script src="{% static 'assets/js/login.service.js' %}"></script>
+        <script src="{% static 'assets/js/login.controller.js' %}"></script>
+        <script src="{% static 'assets/js/menu.controller.js' %}"></script>
+        <script src="{% static 'assets/js/task.list.controller.js' %}"></script>
+        <script src="{% static 'assets/js/task.controller.js' %}"></script>
+
+    </body>
+</html>

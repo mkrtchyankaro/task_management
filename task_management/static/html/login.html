@@ -1,0 +1,65 @@
+<div class="row" style="margin-top:50px;">
+
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+        <div class="panel panel-default">
+            <div class="panel-heading">Please Login</div>
+
+            <div class="panel-body">
+                <form class="form-horizontal login" ng-controller="LoginController" name="loginForm" novalidate
+                      ng-submit="login()">
+
+                    <div class="from-error-block">
+                        <span class="login-form-error">{{ login_error }}</span>
+                    </div>
+
+                    <div class="from-input-block">
+                        <dvi class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="email" class="form-control" name="email" placeholder="Email"
+                                   ng-model="user.email" required/>
+
+                        </dvi>
+                        <div class="error-block">
+                        <span class="login-form-error" ng-show="loginForm.email.$dirty && loginForm.email.$invalid">
+                        <span ng-show="loginForm.email.$error.required">Email is required.</span>
+                        <span ng-show="loginForm.email.$error.email">Invalid email address.</span>
+                        </span>
+                        </div>
+                    </div>
+
+                    <div class="from-input-block">
+                        <dvi class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" name="password" placeholder="Password"
+                                   ng-model="user.password" ng-minlength="4" required/>
+                        </dvi>
+                        <div class="error-block">
+                        <span class="login-form-error"
+                              ng-show="loginForm.password.$dirty && loginForm.password.$invalid">
+                        <span ng-show="loginForm.password.$error.required">Password is required.</span>
+                        <span ng-show="loginForm.password.$error.minlength">Password must be more than 4 characters.</span>
+                        </span>
+                        </div>
+                    </div>
+
+                    <div class="input-group pull-right">
+                        <button type="submit" ng-disabled="
+                            loginForm.password.$dirty && loginForm.password.$invalid
+                            ||loginForm.email.$dirty && loginForm.email.$invalid"
+                                class="btn">Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+            </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="col-md-3"></div>
+</div>

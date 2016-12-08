@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default" ng-controller="MenuController">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+                <img alt="Tasks" height="20" src="static/assets/images/tasks.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <p class="navbar-text">Task Management</p>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="task-add" style="cursor: pointer">Add Task</a></li>
+                <li><a ng-click="logout()" style="cursor: pointer">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
